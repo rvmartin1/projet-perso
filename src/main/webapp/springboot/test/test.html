@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Test Spring Boot</title>
+    <link rel="stylesheet" href="style.css"><link>
+</head>
+<body>
+      
+    <h1 class="centrer">Exemple de Serveur en Spring Boot qui expose des services REST</h1>
+    <h2 class="centrer">Issue de <a href="https://www.youtube.com/watch?v=9SGDpanrc8U">Spring Boot Tutorial</a></h2>
+    <h3>Présentation</h3>
+    <p>Un serveur a été créé avec Spring Boot.
+        Il est associé à une BDD composée d'une table Etudiant. 
+        Le serveur expose 3 services GET / POST / DELETE, 
+        qui ont les fonctionnalités suivantes :
+    </p>
+   <p>- GET : récupérer la liste d'étudiants de la table ETUDIANT</p> 
+   <p>- POST : ajouter un étudiant dans la table ETUDIANT</p> 
+   <p>- DELETE : supprimer un étudiant de la table ETUDIANT</p>
+   <h3>Technologies/Outils</h3>
+   <p>Pour le back : Java, Spring Boot, REST, PostGre, Intellij</p>
+   <p>Pour le front (la page sur laquelle nous nous trouvons) : Javascript;, HTML, CSS, Visual Studio, Intellij, Tomcat</p>
+    
+    <!-- Appel au service GET --> 
+    <h3>Méthode GET : Récupération de la liste des Etudiants dans la BDD</h3>
+    <input type="submit" id="bouton" value="Récupérer les données">
+    <p> Liste des étudiants :</p>
+    <p id="listeEtudiant"></p> 
+
+    
+    
+    <script src="./test.js"></script>
+</body>
+</html>

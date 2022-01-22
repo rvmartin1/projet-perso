@@ -1,0 +1,103 @@
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(9, 66, 232, 0.48);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 66, 232, 0.48) 0%,
+    rgba(60, 194, 253, 0.33) 70%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(9, 66, 232, 0.48) 0%,
+    rgba(60, 194, 253, 0.33) 70%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(9, 66, 232, 0.48) 0%,
+    rgba(60, 194, 253, 0.33) 70%
+  );
+  font-family: "font-1";
+}
+.centrer {
+  text-align: center;
+}
+h1 {
+  color: darkblue;
+  text-shadow: 11px 7px 6px rgba(0, 0, 0, 0.52);
+}
+h3 {
+  color: navy;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  font-family: "font-2";
+  font-size: 1.2em;
+}
+.alignegauche {
+  text-align: left;
+  vertical-align: center;
+  float: left;
+  width: 33%;
+}
+.alignecentrer {
+  text-align: center;
+  vertical-align: center;
+  width: 33%;
+  float: left;
+}
+
+.alignedroit {
+  text-align: right;
+  vertical-align: center;
+  width: 33%;
+  float: left;
+}
+
+.annee {
+  vertical-align: top;
+  width: 150px;
+}
+
+.formationtitre {
+  font-weight: bold;
+}
+
+.titreprojet {
+  color: royalblue;
+  font-weight: bold;
+}
+
+.language {
+  color: blue;
+  font-weight: bold;
+}
+
+.grid {
+  border: 2px solid darkblue; /* Bordure grosseur du trait, en solide, couleur */
+  padding: 10px; /* marge intérieure*/
+  margin-top: 20px; /* marge extérieure */
+  /*box-shadow: 0 2px 12px 5px rgba(18, 88, 218, 0.795);*/
+  background: rgba(238, 238, 252, 0.623);
+  box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  border-radius: 20px; /* bordure arrondi */
+}
+
+.grid2 {
+  border: 2px outset rgba(12, 2, 157, 0.56);
+  background: rgba(0, 0, 255, 0.171);
+  box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  border-radius: 20px; /* bordure arrondi */
+}
+@font-face {
+  font-family: "font-1";
+  src: url("./assets/Noticia_Text/NoticiaText-Regular.ttf");
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url("./assets/Noticia_Text/NoticiaText-BoldItalic.ttf");
+}

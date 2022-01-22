@@ -1,0 +1,38 @@
+body{
+    padding-left:20px;
+}
+.centrer{
+    text-align:center;
+}
+h1{
+    color: blue
+}
+h3{
+    color: blue;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.alignegauche{
+    text-align:left;
+    float:left;
+    width:33%;
+
+}
+.alignecentrer{
+    text-align:center;
+    width:33%;
+    float:left;
+}
+.alignedroit{
+    text-align:right;
+    width:33%;
+    float:left;
+}
+
+.formationannnee{
+    text-align:left;
+}
+
+.formationtitre{
+        font-weight:bold;
+}

@@ -1,0 +1,74 @@
+/*.content {
+  position: absolute;
+  top: 20vh;
+}*/
+body {
+  background: rgba(9, 66, 232, 0.48);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 66, 232, 0.48) 0%,
+    rgba(60, 194, 253, 0.33) 70%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(9, 66, 232, 0.48) 0%,
+    rgba(60, 194, 253, 0.33) 70%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(9, 66, 232, 0.48) 0%,
+    rgba(60, 194, 253, 0.33) 70%
+  );
+  font-family: "font-1";
+}
+
+.grid,
+.fin {
+  border: 2px solid darkblue; /* Bordure grosseur du trait, en solide, couleur */
+  padding: 10px; /* marge intérieure*/
+  margin-top: 20px; /* marge extérieure */
+  /*box-shadow: 0 2px 12px 5px rgba(18, 88, 218, 0.795);*/
+  background: rgba(238, 238, 252, 0.623);
+  box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  /* -webkit-box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(0, 0, 0, 0.64);*/
+  border-radius: 20px; /* bordure arrondi */
+  width: 100%;
+}
+
+.champ-gauche {
+  width: 200px;
+  vertical-align: top;
+}
+h3 {
+  color: navy;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  font-family: "font-2";
+  font-size: 1.2em;
+}
+.centrer {
+  text-align: center;
+}
+
+.language {
+  color: blue;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media all and (max-width: 991px) {
+  .champ-gauche {
+    width: 70px;
+    vertical-align: top;
+  }
+  th,
+  td {
+    font-size: 12px;
+  }
+}

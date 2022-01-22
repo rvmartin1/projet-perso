@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le titre -->
+    <title>Cours HTML</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="logohtml.png" />
+
+    <!-- lien vers le style -->
+    <!-- <link rel="stylesheet" href="style.css"><link> -->
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Exercices tirés de la vidéo :</h1>
+    <h2 style="text-align: center">
+      <a href="https://www.youtube.com/watch?v=qsbkZ7gIKnc" target="_blank">
+        [Cours HTML] Apprendre HTML de zéro</a
+      >
+    </h2>
+    <br />
+    <br />
+
+    <!-- utiles -->
+    <h3
+      style="color: blue; border-bottom-width: 2px; border-bottom-style: solid"
+    >
+      Utiles
+    </h3>
+
+    <table border="5" width="100%">
+      <!-- Légende -->
+      <caption>
+        A Connaître sous Visual Studio Code
+      </caption>
+      <!-- En tete -->
+      <thead>
+        <tr>
+          <th>RACCOURCI / OUTIL</th>
+          <th>DESCRIPTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>"!" ou "html 5"</th>
+          <th>Sur une nouvelle page html, crée le template de la page html</th>
+        </tr>
+        <tr>
+          <th>CTRL + /</th>
+          <th>mise en commentaire d'une ligne de code</th>
+        </tr>
+        <tr>
+          <th>LiveServer</th>
+          <th>
+            Le plugin LiveServer lance un navigateur web et permet de voir les
+            modifications à chaque enregistrement de fichier
+          </th>
+        </tr>
+        <tr>
+          <th>Prettier</th>
+          <th>
+            Le plugin Prettier permet d'indenter automatiquement + cocher Format
+            on save dans les paramètres pour que l'indentation se fasse à chaque
+            enregistrement
+          </th>
+          <th>HTML Snippets</th>
+          <th>Le plugin HTML Snippets permet</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <h3
+      style="color: blue; border-bottom-width: 2px; border-bottom-style: solid"
+    >
+      Les principales balises
+    </h3>
+
+    <section>
+      <div>
+        <h1>Titre - H1 - Il ne faut que un H1 par page</h1>
+        <p>
+          un paragraphe
+          <em>un texte en italique</em>
+          <strong>un texte en gras</strong>
+          <span>L'élement en span ne revient pas à la ligne</span>
+        </p>
+        <p>un autre paragraphe : on revient à la ligne</p>
+      </div>
+      <div>
+        <h2>Titre - H2 : Photos</h2>
+        <img src="paysage-reunion.jpg" alt="image de la réunion" height="200" />
+      </div>
+      <div>
+        <h3>Titre - H3 : Les titres</h3>
+        <ul>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+        </ul>
+        <ol>
+          <li>OL = ordered list</li>
+          <li>OL = ordered list</li>
+          <li>OL = ordered list</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Titre - H4 : Les tableaux</h4>
+        <br />Tableau de bordure 1 (border=1) et qui prendra 50% de la page
+        (width=50%) quelque soit la taille de la page <br /><br />
+        <table border="1" width="50%">
+          <!-- Légende -->
+          <caption>
+            Population d'europe
+          </caption>
+          <!-- En tete -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>France</th>
+              <th>66M</th>
+            </tr>
+            <tr>
+              <th>Allemagne</th>
+              <th>82M</th>
+            </tr>
+            <tr>
+              <th>Espagne</th>
+              <th>47M</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Titre - H5 : Liens</h5>
+        <br />- Lien vers une page contenant la liste des balises html :
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat Sheet</a
+        >
+        <br />L'attribut target=_blank permet d'ouvrir le lien dans un nouvel
+        onglet
+        <br />
+        <br />- Lien vers une page contenant les icones HTML :
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >Icones en HTML</a
+        >
+        <br />Exemples d'icones en utilisant le HTML code : <br />& #9992; =
+        &#9992; <br />& #9728 = &#9728;
+      </div>
+      <div>
+        <h6>Titre - H6 : Video</h6>
+        <br />Une video qui se lance toute seule (autoplay), en boucle (loop) et
+        pas de son (muted), taille 150px (height=150px) <br /><br />
+        <video src="video.mp4" height="150px" autoplay loop muted></video>
+      </div>
+    </section>
+    <br />
+    <!-- Formulaire -->
+    <section>
+      <h3
+        style="
+          color: blue;
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+        "
+      >
+        Les formulaires
+      </h3>
+      <form action="/action.php" method="post">
+        <!-- Nom -->
+        <b>label + input text connecté par un nom</b>
+        <br />
+        <label for="name">Nom</label>
+        <input id="name" type="text" placeholder="Entrez votre nom" />
+        <br />
+
+        <!-- Age -->
+        <br /><b>input number min 2 max 99, valeur par défaut = 18</b>
+        <br />
+        <label for="age">Age</label>
+        <input
+          id="name"
+          type="number"
+          placeholder="Entrez votre nom"
+          min="2"
+          max="99"
+          step="1"
+          value="18"
+        />
+        <br />
+
+        <!-- genre  -->
+        <br /><b>select</b>
+        <br />
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option selected value="femme">Femme</option>
+        </select>
+        <br />
+
+        <!-- genre  -->
+        <br /><b>radio</b>
+        <br />
+        <div>
+          <input type="radio" name="type" id="human" />
+          <label for="human">Humain</label>
+
+          <input type="radio" name="type" checked id="dog" />
+          <label for="dog">Chien</label>
+
+          <input type="radio" name="type" id="cat" />
+          <label for="cat">Chat</label>
+        </div>
+        <br />
+
+        <!-- textarea -->
+        <br /><b>textarea</b><br />
+        <textarea
+          cols="38"
+          rows="10"
+          placeholder="Entrer votre demande"
+        ></textarea>
+        <br />
+
+        <!-- checkbox -->
+        <br /><b>checkbox</b><br />
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <br />
+
+        <!-- bouton de soumission-->
+        <br /><b>bouton de soumission</b> <br />ici vers une page action.php qui
+        n'existe pas => la soummission va générer une erreur <br /><input
+          type="submit"
+          value="Valider"
+        />
+        <br />
+      </form>
+
+      <!-- Mail et envoi de fichier -->
+      <h3
+        style="
+          color: blue;
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+        "
+      >
+        Mail et envoi de fichier
+      </h3>
+      <footer>
+        <br /><b>Ouvrir un mail sur l'adresse rvmartin1@gmail.com</b><br />
+        <a href="mailto:rvmartin1@gmail.com">Ecrivez moi !</a>
+        <br />
+        <br /><b>Télécharger un fichier : ici notice.txt</b><br />
+        <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+        <br />
+      </footer>
+    </section>
+  </body>
+</html>
